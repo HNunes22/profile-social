@@ -1,0 +1,134 @@
+:root {
+--Dark-cyan: hsl(185, 75%, 39%);
+--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+--Dark-grayish-blue: hsl(227, 10%, 46%);
+--Dark-gray: hsl(0, 0%, 59%);
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: var(--Dark-cyan);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-size: 60%, 90%;
+    background-repeat: no-repeat, no-repeat;
+    z-index: 1, 0;
+background-position: right top, left bottom;
+
+}
+
+body {
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kumbh Sans';
+}
+
+p {
+    font-size: 18px;
+}
+
+.card-profile {
+
+@media (min-width: 1025px) and (max-width: 1600px) {
+   
+    border-radius: 10px;
+    text-align: center;
+    width: 27%;
+    overflow: hidden;
+    height: 60%;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px #00000037;
+    } 
+  
+@media (min-width: 375px) and (max-width: 426px) {
+   
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    overflow: hidden;
+    height: 60%;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px #00000037;
+    }
+}
+.bg-top-card {
+    background-image: url(../images/bg-pattern-card.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 35%;
+}
+
+main .img {
+    margin-top: -50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.img img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+
+.info-profile {
+    margin-top: 20px;
+}
+
+.info-profile h2 {
+    margin: 10px 0 0;
+}
+
+.info-profile h2 span {
+    font-weight: 500;
+    color: var(--Dark-gray);
+}
+
+.info-profile h5 {
+    color: var(--Dark-gray);
+    font-weight: 400;
+}
+
+main .adicional-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 20px 20px;
+}
+
+.adicional-info h2 {
+    margin: 0;
+}
+
+.adicional-info > div {
+    text-align: center;
+}
+
+.adicional-info p {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--Dark-gray);
+    margin: 1px;
+}
+
+hr {
+    color: #c4c3c371;
+    opacity: 40%;
+}
+
+
+.attribution {
+    color: #fff;
+     font-size: 11px;
+     text-align: center;
+     margin: 20px;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
